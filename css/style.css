@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    display: flex;
+    margin: 30px;
+    margin-top: 15px;
+    justify-content: start;
+    align-items: center;
+    min-height: 100vh;
+    background: #03a9f4;
+}
+.container{
+    padding: 40px;
+    background: #182b3c;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+.container h2{
+    color: #fff;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: 500;
+    border-bottom: 2px solid #fff;
+    font-weight: bold;
+}
+.container ul{
+    position: relative;
+}
+.container li{
+    position: relative;
+    list-style: none;
+    display: table;
+    margin: 10px 0;
+    padding-left: 60px;
+    padding-right: 5px;
+}
+.container ul li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border-radius: 60px;
+    transition: background 0.5s, width 0.5s;
+    transition-delay: 0.5s, 0s;
+    border: 2px solid #03a9f4;
+    box-sizing: border-box;
+}
+.container ul li:hover::before{
+    width: 100%;
+    background: #03a9f4;
+    transition-delay: 0s, 0.5s;
+}
+.container ul li::after{
+    content: '';
+    position: absolute;
+    top: 26px;
+    left: 24px;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+.container ul li:hover::after{
+    left: 24px;
+    transition-delay: 0.5s;    
+    transform: rotate(45deg) scale(1.5);
+}
+
+.container ul li p{
+    position: relative;
+    z-index: 10;
+    padding: 5px 45px;
+    color: #fff;
+
+}
+.container p a{
+    text-decoration: none;
+    color: #fff;
+}
+.container h2 a {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 700px;
+}
+
+.content h1{
+    margin: 20px;
+    margin-top: -460px;
+    color: #fff;
+}
+.content p{
+    margin: 40px;
+    margin-top: 10px;
+}
