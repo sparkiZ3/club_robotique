@@ -96,10 +96,13 @@ body{
 
 .content h1{
     margin: 20px;
-    margin-top: -460px;
+    margin-top: -300px;
     color: #fff;
 }
 .content p{
     margin: 40px;
     margin-top: 10px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #240D54;
 }
